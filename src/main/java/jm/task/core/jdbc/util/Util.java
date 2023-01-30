@@ -18,11 +18,12 @@ public class Util {
             if (!connection.isClosed()) {
                 System.out.println("Соединение с БД установлено");
             }
-            return connection;
+
+
         } catch (SQLException e) {
             System.out.println("Соединение с БД не установлено");
         }
-            return connection;
+        return connection;
 
     }
 }
