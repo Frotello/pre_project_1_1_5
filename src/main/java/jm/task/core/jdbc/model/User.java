@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "User")
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,7 +19,7 @@ public class User {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "lsatName")
+    @Column(name = "lastName")
     private String lastName;
 
     @Column(name = "age")
